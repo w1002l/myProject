@@ -1,0 +1,122 @@
+
+
+.clear:after {
+ content: '';
+ display: block;
+ clear: both;
+}
+
+#box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0,0,0,0.5);
+ /*opacity: 0.5;*/
+ /*filter: alpha(opacity=50);*/
+ overflow: hidden;
+}
+
+.content {
+ position: absolute;
+ width: 800px;
+ height: 500px;
+ top: 50%;
+ left: 50%;
+ margin-top: -250px;
+ margin-left: -400px;
+ border-radius: 20px;
+ background: #fff;
+ z-index: 999;
+}
+
+.main {
+ width: 600px;
+ margin: 10px auto;
+}
+
+.f-head {
+ height: 30px;
+ border-bottom: 2px solid #ff6700;
+ margin-bottom: 50px;
+}
+
+.f-head .rigster {
+ float: left;
+ font-size: 20px;
+ font-weight: bold;
+ color: #000;
+}
+
+.f-head .city {
+ float: right;
+ font-size: 14px;
+ font-weight: bold;
+ color: #ff6700;
+}
+
+.f-body {
+ width: 520px;
+ margin: 0 20px;
+}
+
+.f-body .text {
+ position: relative;
+}
+.text .tip {
+ display: inline-block;
+ position: absolute;
+ top: 5px;
+ left: 310px;
+ font-size: 12px;
+ color: #666;
+ text-decoration: none;
+}
+.text .tip:hover {
+ color: #ff6700;
+}
+.f-body label {
+ display: inline-block;
+ width: 100px;
+ text-align: right;
+}
+
+.f-body input {
+ display: inline-block;
+ width: 200px;
+ height: 30px;
+ margin-bottom: 20px;
+ outline: none;
+}
+
+.yanzheng {
+ width: 306px;
+}
+
+.yanzheng .left {
+ float: left;
+}
+
+.yanzheng .right {
+ float: right;
+}
+
+.yanzheng .left input {
+ width: 100px;
+}
+
+.f-body .btn {
+ display: block;
+ width: 200px;
+ margin: 0 auto;
+ border: 1px solid #ff6709;
+ font-size: 20px;
+ font-weight: bold;
+ color: #fff;
+ background: #ff6700;
+ cursor: pointer;
+}
+.f-body .btn:hover {
+ box-shadow: 3px 3px 5px grey;
+}

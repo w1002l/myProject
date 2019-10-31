@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+#main{ background:url(../images/header_bg.png) repeat-x; font-family:Arial, Helvetica, sans-serif;}
+#main a{text-decoration:none;}
+#header{ }
+#header_top{}
+.top_left{}
+.top_left li{float:left; list-style:none;}
+.top_left a{font-size:13px; color:#c0c0c0; }
+.top_left a:hover{color:#FFF; text-decoration:underline;}

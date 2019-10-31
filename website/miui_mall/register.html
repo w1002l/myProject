@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>用户注册</title>
+ <link rel="stylesheet" href="css/register.css">
+  </head>
+<body>
+<div id="box">
+ <div class="content">
+  <div class="main">
+   <div class="f-head clear">
+    <span class="rigster">会员注册</span>
+    <span class="city">小米商城</span>
+   </div>
+   <form action="php" method="post">
+     <div class="f-body">
+    <div class="text">
+      <label for="user">用户名：</label><input type="text" id="user" placeholder="请输入用户名">
+      <a class="tip" href="#">请不要输入汉字</a>
+    </div>
+    <div class="text">
+      <label for="pwd">密码：</label><input type="text" id="pwd" placeholder="请输入密码">
+      <a class="tip" href="#">请输入6位以上字符</a>
+    </div>
+    <div class="text">
+      <label for="confirm">确认密码：</label><input type="text" id="confirm" placeholder="请确认你的密码">
+      <a class="tip" href="#">两次密码要输入一致哦</a>
+    </div>
+    <div class="text">
+      <label for="phone">手机号：</label><input type="text" id="phone" placeholder="请填写正确的手机号">
+      <a class="tip" href="#">填写下手机号吧，方便我们联系您！</a>
+    </div>
+    <div class="yanzheng clear">
+     <div class="left">
+      <label for="verification">验证码：</label><input type="text" id="verification" placeholder="请输入验证码">
+     </div>
+     <div class="right">
+      <img src="image/yanzhengma.jpg" alt="这是验证码">
+     </div>
+    </div>
+    <br>
+    <input class="btn" type="button" value="立即注册">
+   </div>
+   </form>
+  </div>
+ </div>
+</div>
+</body>
+</html>
