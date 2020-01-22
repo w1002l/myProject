@@ -5,6 +5,7 @@
 3、[腾讯软件](https://w1002l.github.io/myProject/website/tencent/index.html) <br>
 4、[简易商城](https://w1002l.github.io/myProject/website/simple_mall/index.html) <br>
 5、[豆瓣网](https://w1002l.github.io/myProject/website/douban/main.html) <br>
+5、[爱旅行](https://w1002l.github.io/myProject/website/ailvxing/index.html) <br>
 ### 图片特效系列<br>
 1、[模仿网易去音乐实现3D效果图片轮播](https://w1002l.github.io/myProject/Images/3DchangImg/index.html) <br>
 2、[模仿小米手机视觉差产品图片展示](https://w1002l.github.io/myProject/Images/ablum/index.html)<br>
