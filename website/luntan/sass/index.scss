@@ -1,0 +1,245 @@
+@charset "utf-8";
+/*公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+a:hover {
+  text-decoration: none;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* 头部 css */
+$textColor: #7f7f7f;
+$texthoverColor: #6d6d6d;
+$bgColor: #17a2b8;
+$hoverbgColor: #138496;
+$titleColor: #17A2B8;
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+#header li a {
+  color: #7f7f7f !important;
+}
+#header li a:hover {
+  color: #6d6d6d !important;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+
+}
+.logo img {
+  width: 100%;
+}
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+/* 内容区 css */
+.card {
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    .user-img:hover .hovMsg{
+      display: block !important;
+    }
+    .user-img {
+      display: inline-block;
+      position: relative;
+      .hovMsg {
+        display: none;
+        position: absolute;
+        top: -52px;
+        left: 60px;
+        width: 200px;
+        height: 170px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        text-align: center;
+        border-radius: 5px;
+        z-index: 9999;
+      }
+      .hovMsg::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 66px;
+        left: -19px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent #fff transparent transparent;
+        font-size: 0;    
+        line-height: 0;
+      }
+      .hovMsg::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: -22px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 11px;
+        border-color: transparent #ccc transparent transparent;
+        font-size: 0;    
+        line-height: 0;
+      }
+      .hovMsg-header {
+        display: flex;
+        justify-content: space-around;
+        .hovMsg-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 50px;
+          em {
+            color: $hoverbgColor;
+          }
+        }
+      }
+      .hovMsg-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80px;
+      }
+    }
+  }
+   img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem !important;
+    border-radius: 50%;
+  }
+  .btn-xs {
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: $bgColor;
+    color: #fff;
+    border-radius: 0.2rem;
+  }
+  .btn-xs:hover {
+    background-color: $hoverbgColor;
+  }
+  .btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  .btn-warning:hover {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  h5 {
+    color: $titleColor;
+    font-size: 18px;
+  }
+  small {
+    overflow: hidden;
+    display: block;
+    padding-top: 10px;
+    color: $textColor;
+    font-size: 80%;
+    font-weight: 400;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  .text-secondary {
+    color: #6c757d;
+ }
+  .text-secondary:hover {
+   color: $texthoverColor;
+ } 
+}
+  /*分页 css */
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  /*右侧边栏开始*/
+  .text-muted {
+    color: #6c757d!important;
+  }
+  .col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50px;
+  }
+  .search-mod {
+    .shadow {
+      height: 40px;
+      display: flex;
+    }
+    input {
+      width: 70%;
+      border: none;
+      text-indent: 1rem;
+      font-size: 16px;
+      outline: none;
+    }
+    .btn {
+      width: 30%;
+      padding: 0 8px;
+      background-color: #fff;
+      border: none;
+      color: $titleColor;
+      font-size: 16px;
+      outline: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .btn:hover {
+      background-color: $hoverbgColor;
+      color: #fff;
+    }
+  }
+
+
+  /*尾部 css*/
+  #footer {
+    padding: 1rem;
+    background-color: #F8F9FA;
+    color: #6c757d;
+    .text-center {
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+    }
+  }

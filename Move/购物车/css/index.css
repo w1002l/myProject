@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input,
+button {
+  box-sizing: border-box;
+}
+table {
+  width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+}
+th {
+  height: 30px;
+  line-height: 30px;
+}
+td {
+  text-align: center;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name img {
+  width: 80px;
+  height: 80px;
+}
+.name span {
+  width: 170px;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+input[type="text"],
+button {
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  outline: none;
+}
+input[type="text"] {
+  width: 70px;
+  border-left: none;
+  border-right: none;
+}
+button {
+  width: 25px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: darkgray;
+  color: #fff;
+}
+.decrease {
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.increase {
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+strong {
+  color: red;
+}
+.total {
+  position: relative;
+  box-sizing: border-box;
+  width: 800px;
+  height: 50px;
+  padding: 0 0 0 10px;
+  line-height: 50px;
+  border: 1px solid #c8c8c8;
+  margin: 0 auto;
+  background-image: linear-gradient(RGB(241, 241, 241), RGB(226, 226, 226));
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearing {
+  overflow: hidden;
+  float: right;
+  width: 46px;
+  margin-left: 10px;
+  text-align: center;
+  border-left: 1px solid #ccc;
+}
+.clearing-btn {
+  font-weight: bold;
+}
+.delete {
+  margin-left: 30px;
+}
+
+.arrow-up {
+  padding-right: 20px;
+  background: url(../images/向下箭头.png) no-repeat right center;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+.arrow-down {
+  padding-right: 20px;
+  background: url(../images/向上箭头.png) no-repeat right center;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+.total-money {
+  margin-left: 10px;
+}
+.goods-list {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  top: -152px;
+  left: 0;
+  height: 150px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.goods-list li {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 100px;
+  margin-left: 30px;
+  border: 1px solid #ccc;
+}
+li img {
+  width: 100%;
+  height: 100%;
+}
+li a {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  text-align: center;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+  color: #ddd;
+}
+li:hover a {
+  display: block;
+}
+li a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}

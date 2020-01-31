@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <input type="checkbox" class="all-item">&nbsp;全选
+        </th>
+        <th>商品</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="checkbox" class="item">
+        </td>
+        <td>
+          <div class="name">
+            <img src="images/1.jpg" alt="">
+            <span>Casio/卡西欧 EX-TR350</span>
+          </div>
+        </td>
+        <td>
+          <span class="unit-price">5999</span> 
+        </td>
+        <td>
+          <button class=" decrease ">-</button><input type="text" class="nums" value="1"><button class="increase">+</button>
+        </td>
+        <td>
+          <strong>5999</strong>
+        </td>
+        <td>
+          <a href="javascript:;" class="delete-item">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" class="item">
+        </td>
+        <td>
+          <div class="name">
+            <img src="images/2.jpg" alt="">
+            <span>Canon/佳能 PowerShot SX50 HS</span>
+          </div>
+        </td>
+        <td>
+          <span class="unit-price">4998.56</span>
+        </td>
+        <td>
+          <button class=" decrease ">-</button><input type="text" class="nums" value="1"><button class="increase">+</button>
+        </td>
+        <td>
+          <strong>4998.56</strong>
+        </td>
+        <td>
+          <a href="javascript:;" class="delete-item">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" class="item">
+        </td>
+        <td>
+          <div class="name">
+            <img src="images/3.jpg" alt="">
+            <span>Sony/索尼 DSC-WX300</span>
+          </div>
+        </td>
+        <td>
+          <span class="unit-price">6001.99</span>
+        </td>
+        <td>
+          <button class=" decrease ">-</button><input type="text" class="nums" value="1"><button class="increase">+</button>
+        </td>
+        <td>
+          <strong>6001.99</strong>
+        </td>
+        <td>
+          <a href="javascript:;" class="delete-item">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" class="item">
+        </td>
+        <td>
+          <div class="name">
+            <img src="images/4.jpg" alt="">
+            <span>Fujifilm/富士 instax mini 25</span>
+          </div>
+        </td>
+        <td>
+          <span class="unit-price">1999.00</span>
+        </td>
+        <td>
+          <button class="decrease">-</button><input type="text" class="nums" value="1"><button class="increase">+</button>
+        </td>
+        <td>
+          <strong>1999.00</strong>
+        </td>
+        <td>
+          <a href="javascript:;" class="delete-item">删除</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="total">
+    <div class="left">
+      <input type="checkbox" class="all-item">&nbsp;全选
+      <a class="delete-selected-item" href="javascript:;">删除</a>
+    </div>
+    <div class="clearing">
+      <a class="clearing-btn" href="javascript:;">结算</a>
+    </div>
+    <div class="right">
+      <span class="total-num arrow-up">已选择 <strong>0</strong> 件商品</span>
+      <span class="total-money">合计：￥<strong>0</strong> 元</span>
+    </div>
+    <ul class="goods-list">
+      <!-- <li>
+        <img src="./images/1.jpg" alt="">
+        <a href="javascript:;">取消选择</a>
+      </li>
+      <li>
+        <img src="./images/2.jpg" alt="">
+        <a href="javascript:;">取消选择</a>
+      </li>
+      <li>
+        <img src="./images/3.jpg" alt="">
+        <a href="javascript:;">取消选择</a>
+      </li> -->
+    </ul>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

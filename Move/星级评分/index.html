@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .star {
+        float: left;
+        padding: 0 10px;
+      }
+      .ct-star {
+        float: left;
+        width: 20px;
+        height: 20px;
+        padding-left: 3px;
+        margin-left: -1px;
+        background: url(./images/灰色.png) no-repeat center center;
+        background-size: 100%;
+        vertical-align: -2px;
+        cursor: pointer;
+      }
+      .yellow {
+        background: url(./images/黄色.png) no-repeat center center;
+        background-size: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="star">
+      <b class="ct-star"></b>
+      <b class="ct-star"></b>
+      <b class="ct-star"></b>
+      <b class="ct-star"></b>
+      <b class="ct-star"></b>
+    </span>
+    <span class="star-txt"></span>
+    <script>
+      window.onload = function() {
+        var aSpan = document.getElementsByClassName("star")[0];
+        var aStxt = document.getElementsByClassName("star-txt")[0];  // 文字描述
+        var aBstar = aSpan.getElementsByTagName("b");  // 获取星星个数
+        var arrBtxt = ["很差", "较差", "还行", "推荐", "力荐"];
+        var num = 0;
+        var onOff = true;
+        for (var i = 0; i < aBstar.length; i++) {
+          aBstar[i].index = i;
+          //鼠标移入
+          aBstar[i].onmouseover = function() {
+            if (onOff) {
+              num = this.index;
+              aStxt.innerHTML = arrBtxt[num];
+              for (var i = 0; i <= this.index; i++) {
+                aBstar[i].className = 'ct-star yellow';
+              }
+            }
+          };
+          //鼠标移开
+          aBstar[i].onmouseout = function() {
+            if (onOff) {
+              //设定个开关，等开关为真就执行鼠标移除的代码
+              aStxt.innerHTML = '';
+              for (var i = 0; i <= this.index; i++) {
+                aBstar[i].className = 'ct-star';
+              }
+            }
+          };
+          //鼠标点击
+          aBstar[i].onclick = function() {
+            onOff = false; //开关为假就不执行鼠标移除的代码
+            //先清空
+            aStxt.innerHTML = '';
+            for (var i = 0; i < aBstar.length; i++) {
+              aBstar[i].className = ' ';
+            }
+            //点击当前星星，之前的都点亮包含自己
+            num = this.index;
+            aStxt.innerHTML = arrBtxt[num];
+            for (var i = 0; i <= this.index; i++) {
+              aBstar[i].className = 'ct-star yellow';
+            }
+          };
+        }
+      };
+    </script> 
+  </body>
+</html>

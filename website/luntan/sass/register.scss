@@ -1,0 +1,85 @@
+@charset "utf-8";
+body {
+  background-color: #f8f9fa;
+}
+a:hover {
+  text-decoration: none;
+}
+.error {
+  padding-left: 20px;
+  background: url(../images/error.gif) no-repeat left center;
+  color: red;
+  font-weight: bold;
+}
+.righta {
+  padding-left: 20px;
+  background: url(../images/righta.gif) no-repeat left center;
+  color: green;
+  font-weight: bold;
+}
+.panel {
+  position: absolute;
+  width: 50%;
+  height: 550px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  .panel-heading {
+    background-color: #28A745;
+    .panel-title {
+      color: #fff !important;
+      img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+ }
+  label {
+    margin-bottom: .5rem;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .text-info {
+    color: #3A8EF0;
+    font-size: 14px;
+  }
+  .btn-default {
+    display: block;
+    margin: 0 auto;
+    background-color: #28A745;
+    color: #fff;
+  }
+  .back-login {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .yanzheng {
+    margin-bottom: 10px;
+  }
+  .code{
+    display: inline-block;
+    width: 80px; 
+    height: 30px;
+    background: #aaa;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 7px;
+    padding-left: 7px;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  .change {
+    height: 30px;
+    color: skyblue;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .change:hover {
+    color: #3A8EF0;
+  }
+}
