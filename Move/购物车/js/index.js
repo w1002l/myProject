@@ -18,6 +18,8 @@ window.onload = function () {
       for (var i = 0; i < items.length; i++) {
         items[i].checked = this.checked;
       }
+      show();
+      total();
     })
   }
   // 根据所有复选框是否选中，决定全选框是否选中
@@ -163,6 +165,7 @@ window.onload = function () {
       input.checked = false;
       // 调用商品添加函数把商品从展示模块移除
       input.addEventListener('click', show());
+      total();
     }
   })
 }
