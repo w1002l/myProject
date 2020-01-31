@@ -37,4 +37,4 @@
 3、[全选/反选](https://w1002l.github.io/myProject/Move/全选反选/index.html )<br>
 4、[关键字搜索和替换](https://w1002l.github.io/myProject/Move/textSearch/index.html )<br>
 5、[购物车逻辑实现](https://w1002l.github.io/myProject/Move/购物车/index.html )<br>
-5、[购物车逻辑实现](https://w1002l.github.io/myProject/Move/星级评分/index.html )<br>
+6、[星级评分](https://w1002l.github.io/myProject/Move/星级评分/index.html )<br>
