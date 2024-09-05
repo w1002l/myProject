@@ -220,9 +220,9 @@ module.exports = {
 };
 
 ```
-注意vue2和vue3替换路径的写法不同
-代理过程：
-1.假设baseURL为 http://localhost:3000, 请求路径 /api/getData，那么请求完整路径为 http://localhost:3000/api/getData
+注意vue2和vue3替换路径的写法不同 <br>
+代理过程：<br>
+1.假设baseURL为 http://localhost:3000, 请求路径 /api/getData，那么请求完整路径为 http://localhost:3000/api/getData<br>
 2.根据配置的代理规则，/api开头的请求会被代理服务器转发到目标服务器上，即 https://api.example.com，又因为/api被替换为空，所以最终请求地址为 https://api.example.com/getData <br>
 http://localhost:3000 是本地开发服务器 <br>
 https://api.example.com 是目标服务器 <br>
