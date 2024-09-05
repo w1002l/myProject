@@ -131,7 +131,7 @@ const getImg = imgName => new URL(`../assets/${imgName}.jpg`, import.meta.url).h
 <el-menu :collapse-transition="false">
 ```
 
-6.环境变量①②③④⑤
+6.环境变量 <br>
 ①vue默认的环境变量是development
 ②配置、切换环境变量
 配置环境：要在项目根目录创建三个文件，.env.development、.env.production、.env.test
